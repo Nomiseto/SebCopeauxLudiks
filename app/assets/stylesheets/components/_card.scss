@@ -59,6 +59,11 @@ box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .card-category:hover {
+  text-decoration: none;
   box-shadow: 2px 4px 4px 4px #745030;
   color: #FBEEC1;
   }
+  
+a:hover {
+  text-decoration: none;
+}
