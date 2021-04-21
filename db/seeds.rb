@@ -12,6 +12,6 @@ User.destroy_all
 
 puts "Create Users"
 
-User.create!(username: "moi", email: "moi@gmail.com", password:"moi")
+User.create!(email: "moi@gmail.com", password:"moimoi")
 
 puts "Finished !"
