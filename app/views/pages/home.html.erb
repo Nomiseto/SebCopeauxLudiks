@@ -4,26 +4,32 @@
   <div class="container">
     <h1>Copeaux Ludiks</h1>
     <p>Wood from the hood</p>
-    <a class="btn btn-flat" href="#">Qui suis-je?</a>
+     <%= link_to presentation_path do%>
+    <button type="button" class="btn btn-outline-warning">Presentation</button>
+    <% end %>
   </div>
 </div>
 
 
 <div class="cards">
- <%= link_to articles_path do %>
-   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2018/04/07/node_353848/39330516/public/2018/04/07/B9715318602Z.1_20180407192223_000%2BG0CB22QDD.1-0.jpg?itok=E3x0Y8W31523178856)">
-    Ateliers
-  </div>
+
+ <%= link_to ateliers_path do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2018/04/07/node_353848/39330516/public/2018/04/07/B9715318602Z.1_20180407192223_000%2BG0CB22QDD.1-0.jpg?itok=E3x0Y8W31523178856)">
+      ATELIERS
+    </div>
  <% end %>
 
+  <%= link_to woodart_path do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2019/10/02/node_645973/40841790/public/2019/10/02/B9721111694Z.1_20191002171527_000%2BGRIEJOQBH.2-0.jpg?itok=Xapcrfw-1570522144)">
+      WOOD ART
+    </div>
+  <% end %>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2019/10/02/node_645973/40841790/public/2019/10/02/B9721111694Z.1_20191002171527_000%2BGRIEJOQBH.2-0.jpg?itok=Xapcrfw-1570522144)">
-    Abstract Mosaic Wood
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2018/03/15/node_336103/39230399/public/2018/03/15/B9715059511Z.1_20180315181256_000%2BGTCAT0O7Q.1-0.jpg?itok=s2N6fitl1521197285)">
-    Sculptures
-  </div>
+  <%= link_to meubles_path do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2018/03/15/node_336103/39230399/public/2018/03/15/B9715059511Z.1_20180315181256_000%2BGTCAT0O7Q.1-0.jpg?itok=s2N6fitl1521197285)">
+      MEUBLES SUR MESURE
+    </div>
+  <% end %>
   
 </div>
 
